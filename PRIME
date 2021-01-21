@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+enter the number:<input type = "text" name="num" id="num" >
+<button onclick="get()">get</button>
+<div id="a"></div>
+<script  type="text/javascript">
+ function get(){
+      var n=Number(document.getElementById('num').value);
+      var i,count=0,num=1;
+   if(n==""){
+       document.getElementById('a').innerHTML='<h3>enter a number</h3>';  
+    }
+else{
+    while(count<n){
+     num=num+1;
+    for(i=2;i<=num;i++)
+        {
+      if(num%i==0){
+          break;
+     }
+}
+if(i==num){
+  count=count+1;
+}
+}
+document.getElementById('a').innerHTML='<h3>'+n+'th '+'prime number is '+num+'</h3>';  
+} 
+} 
+</script>
+</body>
+</html>
