@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html>
+ <head></head>
+<body>
+	<h2><u>Multiplication Table</u></h2><br>
+         Enter number&nbsp:<input type="text" name="num1" id ="num1">&nbsp<button onclick= "gen()">Generate</button>
+	<p id="res"></p>
+	<script type="text/javascript">
+	function gen()
+	{
+ 	 var a =Number(document.getElementById('num1').value);
+	var i;
+	for(i=1;i<=10;i++)
+	{
+         result=i*a;
+	document.write('<h4>'+i+'*'+a+'='+result+'</h4>');
+	}
+
+	}
+</script>
+</body>
+</html>
